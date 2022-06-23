@@ -2,3 +2,11 @@ header img{
     height: 100px;
     width: 150px;
 }
+content img{
+    height: 300px;
+    width: 300px;
+}
+footer img{
+    height: 20px;
+    width: 22px;
+}
