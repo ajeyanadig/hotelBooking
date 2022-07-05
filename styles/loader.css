@@ -1,0 +1,12 @@
+#loaderPic{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border-width: 12px;
+    border-color: #f3f3f3;
+    border-top-color: #444444;
+    border-style: solid;
+    margin: 0 auto;
+    margin-top:20%;
+    margin-bottom: 20%;
+}

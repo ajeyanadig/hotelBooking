@@ -1,21 +1,42 @@
 body{
     margin:0;
     padding: 0;
+    background-color: #E0E0E0;
 }
 #main-div{
     margin:0;
-    padding: 0;
+    padding: 0; 
+}
+header{
+    background-color: rosybrown;
 }
 
-#hotel-image{
-    height: 500px;
-    width: 500px;
-}
 header img{
     height: 60px;
     width: 60px;
     cursor: pointer;
 }
+content{
+    display: block;
+
+}
+
+#hotel-image{
+    height: 500px;
+    width: 500px;
+    margin: 2% 4% 0 4%;
+}
+
+form{
+    margin: 0 4% 1% 4%;
+}
+#hotelDesc{
+    margin: 1% 4% 2% 4%;
+}
+footer{
+    background-color: rosybrown;
+}
+
 footer img{
     height: 20px;
     width: 22px;

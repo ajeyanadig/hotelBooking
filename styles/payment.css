@@ -1,21 +1,48 @@
 body{
     margin:0;
     padding: 0;
+    background-color: #E0E0E0;
 }
 #main-div{
     margin:0;
-    padding: 0;
+    padding: 0; 
 }
+header{
+    background-color: rosybrown;
+}
+
 
 header img{
     height: 60px;
     width: 60px;
     cursor: pointer;
 }
-
+content{
+    display: block;
+}
+#hotelDetail{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+}
 #hotel-image{
     height: 500px;
     width: 500px;
+}
+
+#customerDetail {
+    margin:2%;
+}
+#tariff{
+    border: 1px solid black;
+    margin: 2%;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
+footer{
+    background-color: rosybrown;
 }
 
 footer img{

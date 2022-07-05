@@ -1,15 +1,37 @@
 body{
     margin:0;
     padding: 0;
+    background-color: #E0E0E0;
 }
 #main-div{
+
     margin:0;
     padding: 0;
+    
+}
+header{
+    background-color: rosybrown;
 }
 header img{
     height: 60px;
     width: 60px;
     cursor: pointer;
+}
+content{
+    display: block;
+
+}
+.cityCard{
+    margin:2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
+}
+.hotel-images{
+    height: 200px;
+    width: 250px;
+}
+footer{
+    background-color: rosybrown;
 }
 
 footer img{
@@ -17,7 +39,3 @@ footer img{
     width: 22px;
 }
 
-.hotel-images{
-    height: 200px;
-    width: 250px;
-}
