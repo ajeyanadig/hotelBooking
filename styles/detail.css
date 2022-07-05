@@ -1,6 +1,7 @@
 header img{
     height: 100px;
     width: 150px;
+    cursor: pointer;
 }
 footer img{
     height: 20px;
