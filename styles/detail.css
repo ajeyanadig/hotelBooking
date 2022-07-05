@@ -1,6 +1,19 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#main-div{
+    margin:0;
+    padding: 0;
+}
+
+#hotel-image{
+    height: 500px;
+    width: 500px;
+}
 header img{
-    height: 100px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
 }
 footer img{

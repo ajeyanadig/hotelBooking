@@ -1,7 +1,21 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#main-div{
+    margin:0;
+    padding: 0;
+}
+
 header img{
-    height: 100px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
+}
+
+#hotel-image{
+    height: 500px;
+    width: 500px;
 }
 
 footer img{

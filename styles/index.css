@@ -1,10 +1,19 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#main-div{
+    margin:0;
+    padding: 0;
+}
+
 header img{
-    height: 100px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
 }
 content img{
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
 }
 footer img{
     height: 20px;
