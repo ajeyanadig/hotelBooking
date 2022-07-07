@@ -8,46 +8,52 @@
 <body>
 <div id="main-div">
     <header>
-        <img src="./assets/images/logo.png" alt="logo" onclick="window.location='./index.html'"> 
-        <a href="./login.html" target="_blank">Login</a> 
+        <img src="./assets/images/logo.png" alt="logo"> 
+        <a href="./login.html" target="_self">Login</a> 
         
     </header>
     <content>
         <div id="hotelDetail">
             <img id="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
-
-            <h2>Radisson Blu Hotel</h2>
-            <br>
-            #38 of 1,289 hotels in New delhi<br>
-            <br>
-            National Highway 8, New Delhi 11017<br>
-            <br>
+            <div id="hotelDescription">
+                <h2>Radisson Blu Hotel</h2>
+               
+                <p>#38 of 1,289 hotels in New delhi</p>
+                
+                <p>National Highway 8, New Delhi 11017</p>
+            </div>
         </div>
+        <br>
+
         <div id="payment">
             <div id="customerDetail">
-                <strong>Name: </strong>John Doe<br><br>
-                <strong>Number of Adults: </strong>2<br><br>
-                <strong>Check-in Date: </strong>06/06/2020<br><br>
-                <strong>Check-in Date: </strong>08/06/2020
+                <p><strong>Name: </strong>John Doe</p>
+                <p><strong>Number of Adults: </strong>2</p>
+                <p><strong>Check-in Date: </strong>06/06/2020</p>
+                <p><strong>Check-in Date: </strong>08/06/2020</p>
             </div>
             <div id="tariff">
-                <strong>Tarrif Breakdown: </strong>Rs.1000 x 2 Adults x 5 Nights<br>
-                <br>
-                <strong>Total Amount: </strong>Rs.10000<br>
-            </div>  <br>
-            <a href="#">Pay Now</a>    <br>     
+                <p><strong>Tarrif Breakdown: </strong>Rs.1000 x 2 Adults x 5 Nights</p>
+                
+                <p><strong>Total Amount: </strong>Rs.10000</p>
+            </div>  
+            <div id="paynow">
+                <a href="#">Pay Now</a>
+            </div>     
         </div>
         <br><br><br>
     </content>
     <footer>
+        
         <a id="contactuslink" href="./contact.html" target="_self">Contact Us</a>
+        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
         <div id="footerSocials">
         <a href="https://facebook.com" target="_blank"><img src="./assets/images/facebook.png" alt="icon"></a>
         <a href="https://instagram.com" target="_blank"><img src="./assets/images/instagram.png" alt="icon"></a>
         <a href="https://twitter.com" target="_blank"><img src="./assets/images/twitter.png" alt="icon"></a>
         </div>
-        <br>
-        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
+        
+        
     </footer>
 </div>
 </body>

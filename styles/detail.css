@@ -17,9 +17,13 @@ header{
     position: fixed;
     z-index: 2;
     top:0;
-    display: block;
     height: 60px;
     width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 header img{
@@ -27,15 +31,13 @@ header img{
     width: 60px;
     display: inline;
     vertical-align: middle;
+    margin-left: 1%;
 }
 header a{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-
+    margin-right: 2%;
 }
+
+
 content{
     display: block;
     position: relative;
@@ -43,14 +45,51 @@ content{
     padding-bottom: 60px;
 }
 
+h4{
+    font-family: cursive;
+}
+#bookingContainer{
+    
+    display: flex;
+    flex-direction: row;
+    border:2px solid black;
+    width: 95%;
+    margin:0 auto;
+    margin-top: 2%;
+    height: 400px;
+}
+#imageBox{
+    width:75%;
+    border-right:2px solid black;
+    display:flex;
+    justify-content: center;
+}
 #hotel-image{
-    height: 500px;
+    height: 350px;
     width: 500px;
-    margin: 2% 4% 0 4%;
+    margin: 2%;
 }
 
 form{
-    margin: 0 4% 1% 4%;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form div input{
+    width: 60%;
+}
+form>input{
+    width: fit-content;
+    padding: 1%;
+    margin:0 auto;
 }
 #hotelDesc{
     margin: 1% 4% 2% 4%;
@@ -60,10 +99,12 @@ footer{
     background-color: rosybrown;
     position: fixed;
     bottom:0;
-    display: block;
+    display: flex;
     height: 60px;
     width: 100%;
-   
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 footer img{
@@ -71,26 +112,14 @@ footer img{
     width: 22px;
 }
 #contactuslink{
-    display: inline;
-    position: absolute;
-    left:15px;
-    top:50%;
-    transform: translateY(-50%);
- 
-    
+    margin-left:2%;
+     
 }
-#footerSocials{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-}
+
 #TnC{
    font-size: 12px;
-   
-   position: absolute;
-   left:50%;
-   bottom:-10px;
-   transform: translateX(-50%);
+  
+}
+#footerSocials{
+    margin-right: 2%;
 }

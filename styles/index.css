@@ -17,9 +17,13 @@ header{
     position: fixed;
     z-index: 2;
     top:0;
-    display: block;
     height: 60px;
     width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 header img{
@@ -27,15 +31,12 @@ header img{
     width: 60px;
     display: inline;
     vertical-align: middle;
+    margin-left: 1%;
 }
 header a{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-
+    margin-right: 2%;
 }
+
 content{
     display: block;
     position: relative;
@@ -49,7 +50,9 @@ content{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 
 }
@@ -57,27 +60,61 @@ content{
     margin: 0 auto;
     background-color: #f1f1f1;
     padding:10px;
+    border-width: 1px;
     border-radius: 12px;
     border-color: transparent;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 12px;
     width: 30%;
     
 }
+#searchbar:focus{
+    outline-color: transparent;
+}
 #citycards{
-    margin-left: 19%;
-    margin-right: 17%;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
 
+}
+.imageContainer{
+    position: relative;
+    border-radius: 25%;
+    cursor: pointer;
+    
 }
 .hotel-images{
     height: 150px;
     width: 150px;
-    padding:4%;
+    box-shadow: 10px 10px 10px gray;
+    display: block;
     border-radius: 25%;
 }
+.imageHoverText{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    opacity: 0;
+    z-index: 3;
+    color: white;
+    
+}
+.imageContainer:hover{
+    background-color: black;
+}
+.imageContainer:hover .hotel-images{
+    opacity: 0.5;
+}
+.imageContainer:hover .imageHoverText
+{
+    opacity: 1;
+}
+
+
+
 #ViewMore{
     padding-bottom: 4%;
    
@@ -92,10 +129,12 @@ footer{
     background-color: rosybrown;
     position: fixed;
     bottom:0;
-    display: block;
+    display: flex;
     height: 60px;
     width: 100%;
-   
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 footer img{
@@ -103,26 +142,14 @@ footer img{
     width: 22px;
 }
 #contactuslink{
-    display: inline;
-    position: absolute;
-    left:15px;
-    top:50%;
-    transform: translateY(-50%);
- 
-    
+    margin-left:2%;
+     
 }
-#footerSocials{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-}
+
 #TnC{
    font-size: 12px;
-   
-   position: absolute;
-   left:50%;
-   bottom:-10px;
-   transform: translateX(-50%);
+  
+}
+#footerSocials{
+    margin-right: 2%;
 }

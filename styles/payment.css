@@ -17,9 +17,13 @@ header{
     position: fixed;
     z-index: 2;
     top:0;
-    display: block;
     height: 60px;
     width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 header img{
@@ -27,51 +31,90 @@ header img{
     width: 60px;
     display: inline;
     vertical-align: middle;
+    margin-left: 1%;
 }
 header a{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-
+    margin-right: 2%;
 }
+
 content{
-    display: block;
+    
     position: relative;
     top: 60px;
     padding-bottom: 60px;
-}
 
+    display: flex;
+    flex-direction: column;
+}
 #hotelDetail{
+    margin:0 auto;
+    margin-top: 7%;
     background-color: rgb(132,136,139);
     width: 50%;
     height: 20%;
-    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    
 }
 #hotel-image{
-    height: 500px;
-    width: 500px;
+    max-height: 300px;
+    max-width: 270px;
+}
+#hotelDescription{
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    justify-content: space-around;
+   
 }
 
-#customerDetail {
-    margin:2%;
+#payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    margin:0 2%;
+    border-radius: 5px;
+    background-color: rosybrown;
+}
+
+#customerDetail{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#customerDetail strong{
+    font-family: cursive;
 }
 #tariff{
-    border: 1px solid black;
-    margin: 2%;
-    border-radius: 5px;
-    padding: 1% 2%;
-}
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: fit-content;
+    height: 40%;
+}
+#tariff strong{
+    font-family: cursive;
+}
+#paynow{
+    display: flex;
+    align-items: center;
+}
 footer{
     background-color: rosybrown;
     position: fixed;
     bottom:0;
-    display: block;
+    display: flex;
     height: 60px;
     width: 100%;
-   
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 footer img{
@@ -79,26 +122,14 @@ footer img{
     width: 22px;
 }
 #contactuslink{
-    display: inline;
-    position: absolute;
-    left:15px;
-    top:50%;
-    transform: translateY(-50%);
- 
-    
+    margin-left:2%;
+     
 }
-#footerSocials{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-}
+
 #TnC{
    font-size: 12px;
-   
-   position: absolute;
-   left:50%;
-   bottom:-10px;
-   transform: translateX(-50%);
+  
+}
+#footerSocials{
+    margin-right: 2%;
 }

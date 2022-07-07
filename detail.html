@@ -13,32 +13,40 @@
         
     </header>
     <content>
-        <img id ="hotel-image"src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
-        <form action="./payment.html" method="get" target="_self">
-            <label for="numAdults">Adults: </label>
-            <input type="number" name="numAdults" id="numAdults" min="1" step="1" required/><br>
-            
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" autocomplete="off" required/> <br>
-            
-            <label for="fromDate">From Date: </label>
-            <input type="date" name="fromDate" id="fromDate" required placeholder="dd-mm-yyy"/><br>
-            
-            <label for="toDate">To Date: </label>
-            <input type="date" name="toDate" id="toDate" required placeholder="dd-mm-yyy"/><br>
+        <div id="bookingContainer">
+            <div id="imageBox">
+                <img id ="hotel-image"src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
+            </div>
+            <form action="./payment.html" method="get" target="_self">
+                <div><label for="numAdults">Adults: </label>
+                    <input type="number" name="numAdults" id="numAdults" min="1" step="1" required/>
+                </div>
 
-            <label for="Total">Total: </label>
-            <input type="text" id="Total" required disabled/><br>
-            
-            <input type="submit" value="Book Now"/>
-        </form>
-        
+                <div><label for="name">Name: </label>
+                    <input type="text" name="name" id="name" autocomplete="off" required/> 
+                </div>
+
+                <div><label for="fromDate">From Date: </label>
+                    <input type="date" name="fromDate" id="fromDate" required placeholder="dd-mm-yyy"/>
+                </div>
+
+                <div><label for="toDate">To Date: </label>
+                    <input type="date" name="toDate" id="toDate" required placeholder="dd-mm-yyy"/>
+                </div>
+
+                <div><label for="Total">Total: </label>
+                    <input type="text" id="Total" required disabled/>
+                </div>
+
+                <input type="submit" value="Book Now"/>
+            </form>
+        </div>
         <br> 
         <div id="hotelDesc">  
-            <h2>Radisson Blu Hotel</h2><br>
-            Rating<br><br>
-            5 Star<br><br>
-            AMENITIES<br>
+            <h2>Radisson Blu Hotel</h2>
+            <h4>Rating</h4>
+            5 Star<br>
+            <h4>AMENITIES</h4>
             <ul>
                 <li>Room Service</li>
                 <li>Restaurant</li>
@@ -47,19 +55,21 @@
                 <li>Pool</li>
             </ul>
 
-            <h5>Description</h5>
-            aaaaaaaaaaaaaaaaaaaaaaaaavjfnfhurouHRfouhfrjn ejNJNFakjbfnbkanf nefnnefnfnefnn<br>
+            <h4>Description</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident<br>
         </div>
     </content>
     <footer>
+        
         <a id="contactuslink" href="./contact.html" target="_self">Contact Us</a>
+        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
         <div id="footerSocials">
         <a href="https://facebook.com" target="_blank"><img src="./assets/images/facebook.png" alt="icon"></a>
         <a href="https://instagram.com" target="_blank"><img src="./assets/images/instagram.png" alt="icon"></a>
         <a href="https://twitter.com" target="_blank"><img src="./assets/images/twitter.png" alt="icon"></a>
         </div>
-        <br>
-        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
+        
+        
     </footer>
 </div>
 </body>

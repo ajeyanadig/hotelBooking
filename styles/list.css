@@ -12,15 +12,18 @@ a{
     color: black;
     text-decoration: none;
 }
-
 header{
     background-color: rosybrown;
     position: fixed;
     z-index: 2;
     top:0;
-    display: block;
     height: 60px;
     width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 header img{
@@ -28,15 +31,13 @@ header img{
     width: 60px;
     display: inline;
     vertical-align: middle;
+    margin-left: 1%;
 }
 header a{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-
+    margin-right: 2%;
 }
+
+
 content{
     display: block;
     position: relative;
@@ -45,17 +46,31 @@ content{
 }
 content ul{
     margin-top: 2%;
+    
     text-align: center;
 }
 content ul li{
     display: inline;
     font-weight: bold;
+    margin-right: 5%;;
+}
+#list-view{
+    width: 80%;
+    margin:0 auto;
+    height: auto;
+    display:grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
 }
 .cityCard{
-    margin:2%;
-    background-color: rgb(132,136,139);
-    width: 40%;
-    display: inline-block;
+    background-color: lightgray;
+    
+    display: flex;
+    flex-direction: row;
+}
+.hotelDescription{
+    padding-left: 4%;
 }
 .hotel-images{
     height: 200px;
@@ -65,15 +80,16 @@ content ul li{
 #map-view{
     display: none;
 }
-
 footer{
     background-color: rosybrown;
     position: fixed;
     bottom:0;
-    display: block;
+    display: flex;
     height: 60px;
     width: 100%;
-   
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 footer img{
@@ -81,26 +97,14 @@ footer img{
     width: 22px;
 }
 #contactuslink{
-    display: inline;
-    position: absolute;
-    left:15px;
-    top:50%;
-    transform: translateY(-50%);
- 
-    
+    margin-left:2%;
+     
 }
-#footerSocials{
-    display: inline;
-    position: absolute;
-    right:15px;
-    top:50%;
-    transform: translateY(-50%);
-}
+
 #TnC{
    font-size: 12px;
-   
-   position: absolute;
-   left:50%;
-   bottom:-10px;
-   transform: translateX(-50%);
+  
+}
+#footerSocials{
+    margin-right: 2%;
 }
