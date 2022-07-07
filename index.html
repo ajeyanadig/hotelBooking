@@ -2,6 +2,7 @@
 <html>
 <head>
     <link href="./styles/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="main-div">
@@ -11,8 +12,8 @@
         
     </header>
     <content>
-        <div id="SearchBar">
-            <input type="text" placeholder="City"> <br>
+        <div id="SearchBarDiv">
+            <input id="searchbar" type="text" placeholder="City"> <br>
         </div>
         <div id="citycards">
             
@@ -21,18 +22,21 @@
             <img class="hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
             <img class="hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><br>
         </div>
-        <div>
-            <a href="#">View More  </a>
+        <div id="ViewMore">
+            <a href="#">View More >> </a>
         </div>
 
     </content>
     <footer>
-        <a href="./contact.html" target="_self">Contact Us</a><br>
+        
+        <a id="contactuslink" href="./contact.html" target="_self">Contact Us</a>
+        <div id="footerSocials">
         <a href="https://facebook.com" target="_blank"><img src="./assets/images/facebook.png" alt="icon"></a>
         <a href="https://instagram.com" target="_blank"><img src="./assets/images/instagram.png" alt="icon"></a>
         <a href="https://twitter.com" target="_blank"><img src="./assets/images/twitter.png" alt="icon"></a>
+        </div>
         <br>
-        © 2022 Room Search Pvt Ltd
+        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
     </footer>
 </div>
 </body>

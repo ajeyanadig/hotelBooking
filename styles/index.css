@@ -2,30 +2,74 @@ body{
     margin:0;
     padding: 0;
     background-color: #E0E0E0;
-}
-header{
-    background-color: rosybrown;
-}
-header img{
-    height: 60px;
-    width: 60px;
+    font-family: 'Ubuntu',sans-serif;
 }
 #main-div{
     margin:0;
     padding: 0;
 }
-#SearchBar{
+a{
+    color: black;
+    text-decoration: none;
+}
+header{
+    background-color: rosybrown;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    display: block;
+    height: 60px;
+    width: 100%;
+
+}
+header img{
+    height: 60px;
+    width: 60px;
+    display: inline;
+    vertical-align: middle;
+}
+header a{
+    display: inline;
+    position: absolute;
+    right:15px;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+content{
+    display: block;
+    position: relative;
+    top: 60px;
+    padding-bottom: 60px;
+}
+
+#SearchBarDiv{
     height: 380px;
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: block;
+    position: relative;
 
 }
+#searchbar{
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding:10px;
+    border-radius: 12px;
+    border-color: transparent;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    width: 30%;
+    
+}
 #citycards{
-    margin-left: 15%;
-    margin-right: 15%;
-
+    margin-left: 19%;
+    margin-right: 17%;
 
 }
 .hotel-images{
@@ -34,11 +78,51 @@ header img{
     padding:4%;
     border-radius: 25%;
 }
+#ViewMore{
+    padding-bottom: 4%;
+   
+}
+#ViewMore a{
+    display: block;
+    text-align: center;
+
+}
 
 footer{
     background-color: rosybrown;
+    position: fixed;
+    bottom:0;
+    display: block;
+    height: 60px;
+    width: 100%;
+   
+    
 }
 footer img{
     height: 20px;
     width: 22px;
+}
+#contactuslink{
+    display: inline;
+    position: absolute;
+    left:15px;
+    top:50%;
+    transform: translateY(-50%);
+ 
+    
+}
+#footerSocials{
+    display: inline;
+    position: absolute;
+    right:15px;
+    top:50%;
+    transform: translateY(-50%);
+}
+#TnC{
+   font-size: 12px;
+   
+   position: absolute;
+   left:50%;
+   bottom:-10px;
+   transform: translateX(-50%);
 }
