@@ -61,6 +61,9 @@ content{
     height: 200px;
     width: 250px;
 }
+.checked{
+    color: orange;
+}
 
 #map-view{
 

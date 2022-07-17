@@ -37,11 +37,49 @@ h4{
     border-right:2px solid black;
     display:flex;
     justify-content: center;
+    align-items: center;
 }
-#hotel-image{
+.carousel{
+    
+}
+.carousel-inner{
     height: 350px;
     width: 500px;
     margin: 2%;
+}
+.hotel-image{
+    height: 350px;
+    width: 500px;
+    margin: 2%;
+}
+.carousel-control-prev{
+    margin-left:-37.5%;
+}
+.carousel-control-next{
+    margin-right:-37.5%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rosybrown;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rosybrown;
 }
 
 #bookingForm{
@@ -72,6 +110,10 @@ h4{
 #hotelDesc{
     margin: 1% 4% 2% 4%;
 }
+.checked{
+    color: orange;
+}
+
 
 footer{
     background-color: rosybrown;
