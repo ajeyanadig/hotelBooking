@@ -96,3 +96,34 @@ footer img{
 #footerSocials{
     margin-right: 2%;
 }
+@media screen and (min-width:576px) and (max-width:768px){
+    #list-view{
+        display: flex;
+        flex-direction: column;
+    }
+    .cityCard{
+        margin: 2% 0;
+    }
+    #map-view img{
+        width:95%;
+    }
+}
+@media screen and (max-width:576px){
+    #list-view{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cityCard{
+        margin: 2% 0;
+        flex-direction: column;
+    }
+    .hotel-images{
+        height: 15%;
+        max-height: 300px;
+        width: 100%;
+    }
+    #map-view img{
+        width:95%;
+    }
+}

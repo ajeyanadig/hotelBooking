@@ -101,3 +101,39 @@ content{
     text-align: center;
 
 }
+
+@media screen and (max-width:576px){
+    #searchbar{
+        width: 60%;
+    }
+    #citycards{
+        flex-direction: column;
+    }
+    .imageContainer{
+        margin: 3% 0;
+    }
+    .hotel-images{
+        height: 180px;
+        width: 180px;
+        
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+    #searchbar{
+        width: 60%;
+    }
+    #citycards{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 5%;
+    }
+    .imageContainer{
+        margin: 3% 0;
+    }
+    .hotel-images{
+        height: 180px;
+        width: 180px;
+        
+    }
+}
+
