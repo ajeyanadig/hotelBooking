@@ -46,13 +46,13 @@ content{
 #searchbar:focus{
     outline-color: transparent;
 }
-#citycards{
+.citycards{
     width: 100%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 
 }
 .imageContainer{
@@ -92,6 +92,7 @@ content{
 
 
 #ViewMore{
+    padding-top: 2%;
     padding-bottom: 3%;
     display: flex;
     justify-content: center;
