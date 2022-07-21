@@ -44,7 +44,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" style="display:flex;margin:auto;">Login</button>
+                <button type="button" class="btn btn-primary" onclick="loginHandler()" data-toggle="modal" data-target="#login-modal" style="display:flex;margin:auto;">Login</button>
             </div>
         </div>          
     </div>
@@ -82,8 +82,7 @@
 
 <div id="main-div">
     <header>
-        <img src="./assets/images/logo.png" alt="logo"> 
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal">Login</button>
+     
     </header>
     <content>
         <div id="bookingContainer">
@@ -113,7 +112,7 @@
             </div>
             <form id="bookingForm" action="./payment.html" method="get" target="_self">
                 <div><label for="numAdults">Adults: </label>
-                    <input type="number" name="numAdults" id="numAdults" min="1" step="1" required/>
+                    <input type="number" oninput="getPrice(numAdults.value,fromDate.value,toDate.value);" name="numAdults" id="numAdults" min="1" step="1" required/>
                 </div>
 
                 <div><label for="name">Name: </label>
@@ -121,15 +120,15 @@
                 </div>
 
                 <div><label for="fromDate">From Date: </label>
-                    <input type="date" name="fromDate" id="fromDate" required placeholder="dd-mm-yyy"/>
+                    <input type="date" oninput="getPrice(numAdults.value,fromDate.value,toDate.value);setMinDate(fromDate.value)" name="fromDate" id="fromDate" required placeholder="dd-mm-yyy"/>
                 </div>
 
                 <div><label for="toDate">To Date: </label>
-                    <input type="date" name="toDate" id="toDate" required placeholder="dd-mm-yyy"/>
+                    <input type="date" oninput="getPrice(numAdults.value,fromDate.value,toDate.value);" name="toDate" id="toDate"  required placeholder="dd-mm-yyy"/>
                 </div>
 
                 <div><label for="Total">Total: </label>
-                    <input type="text" id="Total" required disabled/>
+                    <input type="text" id="Total" required readonly/>
                 </div>
 
                 <button type="submit" class="btn btn-outline-success" >Book Now</button> 
@@ -159,19 +158,14 @@
         </div>
     </content>
     <footer>
-        
-        <button id="contactuslink" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal">Contact Us</button>
-        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
-        <div id="footerSocials">
-        <a href="https://facebook.com" target="_blank"><img src="./assets/images/facebook.png" alt="icon"></a>
-        <a href="https://instagram.com" target="_blank"><img src="./assets/images/instagram.png" alt="icon"></a>
-        <a href="https://twitter.com" target="_blank"><img src="./assets/images/twitter.png" alt="icon"></a>
-        </div>
-        
+    
         
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>  
+<!--MY SCRIPTS-->
+<script src="./scripts/common.js"></script>
+<script src="./scripts/detail.js"></script>
 </body>
 </html>

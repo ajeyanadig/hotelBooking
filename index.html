@@ -43,7 +43,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" style="display:flex;margin:auto;">Login</button>
+                <button type="button" class="btn btn-primary" onclick="loginHandler()" data-toggle="modal" data-target="#login-modal" style="display:flex;margin:auto;">Login</button>
             </div>
         </div>          
     </div>
@@ -82,8 +82,6 @@
 
 <div id="main-div">
     <header>
-        <img src="./assets/images/logo.png" alt="logo"> 
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal">Login</button>
         
     </header>
     <content>
@@ -105,7 +103,7 @@
             <div class="imageHoverText">Kolkata</div>
             </div>
         </div>   
-        <div class="citycards"> 
+        <div class="citycards hidden"> 
             <div class="imageContainer"><img class="hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">
             <div class="imageHoverText">Chennai</div>
             </div>
@@ -120,28 +118,19 @@
             </div>
         </div>
         <div id="ViewMore">
-            <a type="button" class="btn btn-secondary" href="#" >View More</a>
+            <button type="button" id="viewMoreButton" onclick="viewMoreHandler()" class="btn btn-secondary" href="#" >View More</button>
         </div>
 
     </content>
     <footer>
-        
-        
-        <button id="contactuslink" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal">Contact Us</button>
-        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
-        <div id="footerSocials">
-        <a href="https://facebook.com" target="_blank"><img src="./assets/images/facebook.png" alt="icon"></a>
-        <a href="https://instagram.com" target="_blank"><img src="./assets/images/instagram.png" alt="icon"></a>
-        <a href="https://twitter.com" target="_blank"><img src="./assets/images/twitter.png" alt="icon"></a>
-        </div>
-        
-        
+       
     </footer>
-
-
     <!--BOOTSTRAP JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </div>
+<!--MY SCRIPTS-->
+<script src="./scripts/common.js"></script>
+<script src="./scripts/index.js"></script>
 </body>
 </html>

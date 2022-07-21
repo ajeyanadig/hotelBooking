@@ -57,6 +57,9 @@ content{
 .hotelDescription{
     padding-left: 4%;
 }
+.checked{
+    color: orange;
+}
 .hotel-images{
     height: 200px;
     width: 250px;

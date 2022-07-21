@@ -102,12 +102,15 @@ content{
     text-align: center;
 
 }
+.hidden{
+    display: none;
+}
 
 @media screen and (max-width:576px){
     #searchbar{
         width: 60%;
     }
-    #citycards{
+    .citycards{
         flex-direction: column;
     }
     .imageContainer{
@@ -123,7 +126,7 @@ content{
     #searchbar{
         width: 60%;
     }
-    #citycards{
+    .citycards{
         display: grid;
         grid-template-columns: auto auto;
         grid-row-gap: 5%;

@@ -42,7 +42,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" style="display:flex;margin:auto;">Login</button>
+                <button id="loginButton" type="button" class="btn btn-primary" onclick="loginHandler()" data-toggle="modal" data-target="#login-modal" style="display:flex;margin:auto;">Login</button>
             </div>
         </div>          
     </div>
@@ -79,8 +79,7 @@
 
 <div id="main-div">
     <header>
-        <img src="./assets/images/logo.png" alt="logo"> 
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal">Login</button>
+       
     </header>
     <content>
         <div id="hotelDetail">
@@ -108,26 +107,20 @@
                 <p><strong>Total Amount: </strong>Rs.10000</p>
             </div>  
             <div id="paynow">
-                <button type="button" class="btn btn-success" disabled>Pay Now</div>
+                <button type="button" id="paynowButton" class="btn btn-success" disabled="false">Pay Now</div>
             </div>     
         </div>
         <br><br><br>
     </content>
     <footer>
-        
-        <button id="contactuslink" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal">Contact Us</button>
-        <p id="TnC">© 2022 Room Search Pvt Ltd</p>
-        <div id="footerSocials">
-        <a href="https://facebook.com" target="_blank"><img src="./assets/images/facebook.png" alt="icon"></a>
-        <a href="https://instagram.com" target="_blank"><img src="./assets/images/instagram.png" alt="icon"></a>
-        <a href="https://twitter.com" target="_blank"><img src="./assets/images/twitter.png" alt="icon"></a>
-        </div>
-        
-        
+      
     </footer>
  
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>  
+<!--MY SCRIPTS-->
+<script src="./scripts/common.js"></script>
+<script src="./scripts/payment.js"></script>
 </body>
 </html>
