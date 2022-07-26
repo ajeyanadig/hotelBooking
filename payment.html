@@ -83,31 +83,49 @@
     </header>
     <content>
         <div id="hotelDetail">
-            <img id="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+            <img id="hotel-image">
             <div id="hotelDescription">
-                <h2>Radisson Blu Hotel</h2>
+                <h2 id="hotelName"></h2>
                
-                <p>#38 of 1,289 hotels in New delhi</p>
+                <strong><p id="hotelRanking"></p></strong>
                 
-                <p>National Highway 8, New Delhi 11017, India</p>
+                <p id="hotelAddress"></p>
             </div>
         </div>
         <br>
 
         <div id="payment">
             <div id="customerDetail">
-                <p><strong>Name: </strong>John Doe</p>
-                <p><strong>Number of Adults: </strong>2</p>
-                <p><strong>Check-in Date: </strong>06/06/2020</p>
-                <p><strong>Check-in Date: </strong>08/06/2020</p>
+                <p><strong>Name: </strong>
+                    <span id="name"></span>
+                </p>
+
+                <p><strong>Number of Adults: </strong>
+                    <span id="numAdults"></span>
+                </p>
+
+                <p><strong>Check-in Date: </strong>
+                    <span id="fromDate"></span>
+                </p>
+
+                <p><strong>Check-out Date: </strong>
+                    <span id="toDate"></span>
+                </p>
+
             </div>
             <div id="tariff">
-                <p><strong>Tarrif Breakdown: </strong>Rs.1000 x 2 Adults x 5 Nights</p>
+                <p><strong>Tarrif Breakdown: </strong>
+                    <span id="inputBreakdown"></span>
+                </p>
+
                 
-                <p><strong>Total Amount: </strong>Rs.10000</p>
+                <p><strong>Total Amount: </strong>
+                    <span id="total"></span>
+                </p>
+
             </div>  
             <div id="paynow">
-                <button type="button" id="paynowButton" class="btn btn-success" disabled="false">Pay Now</div>
+                <button type="button" id="paynowButton" onclick="window.alert('Hi your booking was successful')" class="btn btn-success" disabled="false">Pay Now</div>
             </div>     
         </div>
         <br><br><br>

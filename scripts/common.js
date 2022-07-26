@@ -36,7 +36,7 @@ let loginHandler=()=>{
         loginButton.setAttribute("data-target",'');
         loginButton.setAttribute("data-toggle",'');
         loginStatus=true;
-        window.alert('Successfully loggin in');
+        window.alert('Successfully logged in');
         
     }
 

@@ -16,3 +16,7 @@ let viewMoreHandler=(e)=>{
     }
      
 }
+let city= document.getElementsByClassName('imageContainer');
+const cityCardHandler=(cityName)=>{
+    window.location.href='./list.html?city='+cityName;
+}
