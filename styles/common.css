@@ -65,3 +65,22 @@ a:hover { text-decoration: none; color: inherit; }
 
 
 a:active { text-decoration: none; }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#loaderPic{
+    display: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border-width: 12px;
+    border-color: #f3f3f3;
+    border-top-color: #444444;
+    border-style: solid;
+    margin: 0 auto;
+    margin-top:20%;
+    margin-bottom: 20%;
+    animation: spin 1s linear infinite;
+}

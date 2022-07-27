@@ -1,4 +1,5 @@
 const pricePerDay=1000;
+showLoader();
 //FORM STUFF
 function setMinDate(str1){
     
@@ -16,6 +17,7 @@ function dateDiff(str1,str2){
     let diffDays= Math.ceil(diffTime/(1000*60*60*24));
     return diffDays;
 }
+
 function getPrice(numAdults,str1,str2){
     //DATE PARSING
     if(str1!==''&&str2!==''&&numAdults!==''){
@@ -96,6 +98,12 @@ myHotelResult.then((response)=>{
         hotelAmenititesEle.innerHTML+="<li>"+hotelAmenititesArray[i].name+"</li>";
     }
 
+
+    hideLoader();
+
+
+
+
     hotelNameEle.innerText=hotelName;
     hotelDescriptionEle.innerText=hotelDescription;
     let carouselInnerTemplate=`
@@ -157,8 +165,4 @@ myPhotosResult.then((response)=>{
 
 })
 
-
-
-
- 
 

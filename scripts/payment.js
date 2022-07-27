@@ -1,11 +1,12 @@
+
+showLoader();
+
 let paynowButton= document.getElementById('paynowButton');
-loginButton.addEventListener("click",buttonToggler)
-function buttonToggler(){
-    if(loginStatus===false)
-        paynowButton.removeAttribute("disabled");
-    else
-        paynowButton.setAttribute("disabled",'');      
-}
+
+
+
+
+
 function dateDiff(str1,str2){
     let date1= new Date(str1);
     let date2= new Date(str2);
@@ -13,6 +14,7 @@ function dateDiff(str1,str2){
     let diffDays= Math.ceil(diffTime/(1000*60*60*24));
     return diffDays;
 }
+
 
 
 let URLString= window.location.href;
@@ -90,6 +92,7 @@ myHotelResult.then((response)=>{
     hotelAddressEle.innerText=hotelAddress;
     hotelPhotoEle.setAttribute("src",hotelImageURL)
     
+    hideLoader();
     
 })
 

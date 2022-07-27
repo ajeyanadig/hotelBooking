@@ -1,8 +1,5 @@
+showLoader(); //IN COMMON.JS
 
-//  let hotelName=[];
-//  let hotelAddress=[];
-//  let hotelImageURL=[];
-//  let hotelRating=[];
 let setRatings=(strRating,index)=>{
     let fullStars=Number(strRating.charAt(0));
     let halfStar= Number(strRating.charAt(2));
@@ -84,21 +81,7 @@ myResult.then((result)=>{
 let makeCards=(hotelObjArray)=>{
     
     let listViewContainer=document.getElementById('list-view');
-    
-    // for(let i=0; i<hotelObjArray.length;i++){
-    //     let cardTemplateLiteral=
-    //     `<div class="cityCard">
-    //         <img class="hotel-images" src=${hotelObjArray[i].hotelImageURL}>
-    //         <div class="hotelDescription">
-    //             <h3>${hotelObjArray[i].hotelName}i</h3>
-                    // <div id="hotelRatings">
-                                
-                    // </div>
-    //             New Delhi<br>
-    //         </div>
-    //     </div>`
-    //     listViewContainer.innerHTML+=cardTemplateLiteral;
-    // }
+ 
     hotelObjArray.forEach((hotelEle,index)=>{
         let cardTemplateLiteral=
         `<div class="cityCard" onClick="cityCardHandler(${hotelEle.hotelID})">
@@ -114,6 +97,7 @@ let makeCards=(hotelObjArray)=>{
         listViewContainer.innerHTML+=cardTemplateLiteral;
         setRatings(hotelEle.hotelRating,index);
     })
+    hideLoader();
     
 }
 let cityCardHandler=(locationID)=>{
